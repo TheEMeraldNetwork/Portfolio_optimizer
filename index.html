@@ -1,0 +1,261 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Macro Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+      body { background-color: #0f1113; color: #e0e0e0; }
+      .card { background-color: #171a1f; border: 1px solid #2a2f36; }
+      .card-title { color: #ffffff; font-weight: 600; }
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      iframe { width: 100%; height: 520px; border: none; border-radius: 8px; background: #0f1113; }
+      .kpi { font-size: 1.25rem; }
+      .muted { color: #9aa4b2; }
+    </style>
+  </head>
+  <body class="p-3">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="m-0">Macro Dashboard</h3>
+        <div class="muted">Run: RunUnified-20250926-1304UTC</div>
+      </div>
+      <div class="row g-3 mb-2">
+        <div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Actual Exp. Return</div><div class="kpi">-4.4%</div></div></div>
+<div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Actual Volatility</div><div class="kpi">29.1%</div></div></div>
+<div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Actual Sharpe</div><div class="kpi">-0.15</div></div></div>
+<div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Optimized Exp. Return</div><div class="kpi">-4.4%</div></div></div>
+<div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Optimized Volatility</div><div class="kpi">29.1%</div></div></div>
+<div class="col-6 col-md-2"><div class="card p-2"><div class="muted">Optimized Sharpe</div><div class="kpi">-0.15</div></div></div>
+      </div>
+      <div class="grid-2 mt-2">
+        <div class="card p-2">
+          <div class="card-title">Inflation vs Growth</div>
+          <iframe src="macro_quadrants.html"></iframe>
+        </div>
+        <div class="card p-2">
+          <div class="card-title">Buffett Indicator vs Growth</div>
+          <iframe src="buffett_quadrant.html"></iframe>
+        </div>
+      </div>
+      <div class="card p-3 mt-3">
+        <div class="card-title">Holdings (Optimized)</div>
+        
+      </div>
+      <div class="card p-3 mt-3">
+        <div class="card-title">Trades (Latest Optimizer)</div>
+        <table border="1" class="dataframe table table-dark table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>symbol</th>
+      <th>action</th>
+      <th>mu_mean_q</th>
+      <th>mu_sd_q</th>
+      <th>rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAPL</td>
+      <td>Keep</td>
+      <td>0.035258</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>ALIT</td>
+      <td>Keep</td>
+      <td>0.020563</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>AMZN</td>
+      <td>Keep</td>
+      <td>0.032317</td>
+      <td>0.087317</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>ARDT</td>
+      <td>Keep</td>
+      <td>0.037782</td>
+      <td>0.020000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>AVGO</td>
+      <td>Keep</td>
+      <td>0.032233</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>AXON</td>
+      <td>Keep</td>
+      <td>0.030413</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>BWMX</td>
+      <td>Keep</td>
+      <td>0.043245</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>COUR</td>
+      <td>Increase</td>
+      <td>0.034582</td>
+      <td>0.020000</td>
+      <td>PE_ttm 47.6 vs med 16.5; ROA -0.0% vs med 0.0%; ROE -0.1% vs med 0.1%; Revenue TTM positive | Trend: bullish; 3M momentum: 38.69%; RSI14: 60.9; MACD hist: 0.044 | mean=0.26, 30d imbalance=0.00 (pos=0, neg=0) | implied=2.77%, rating balance=0.47 (SB=2,B=6,H=6,S=1,SS=0) | regime=Mixed, beta_1y=1.00 -> score=-0.00 | Bayesian ER mean=3.46% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>CRTO</td>
+      <td>Keep</td>
+      <td>0.032380</td>
+      <td>0.144561</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CTRA</td>
+      <td>Keep</td>
+      <td>0.035384</td>
+      <td>0.030973</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CVS</td>
+      <td>Keep</td>
+      <td>0.038288</td>
+      <td>0.035692</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CWAN</td>
+      <td>New</td>
+      <td>0.023534</td>
+      <td>0.020000</td>
+      <td>PE_ttm 46.4 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.3% vs med 0.1%; EPS positive; Revenue TTM positive | Trend: bearish; 3M momentum: -16.91%; RSI14: 28.8; MACD hist: -0.155 | Empty news feed | implied=64.51%, rating balance=1.00 (SB=5,B=7,H=0,S=0,SS=0) | regime=Mixed, beta_1y=1.08 -> score=-0.03 | Bayesian ER mean=2.35% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>DDI</td>
+      <td>New</td>
+      <td>0.035749</td>
+      <td>0.020000</td>
+      <td>PE_ttm 4.4 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive | Trend: bearish; 3M momentum: -1.57%; RSI14: 30.8; MACD hist: -0.000 | mean=0.28, 30d imbalance=0.00 (pos=0, neg=0) | implied=104.79%, rating balance=1.00 (SB=0,B=4,H=0,S=0,SS=0) | regime=Mixed, beta_1y=0.46 -> score=0.22 | Bayesian ER mean=3.57% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>DOX</td>
+      <td>Keep</td>
+      <td>0.033699</td>
+      <td>0.062127</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>GPCR</td>
+      <td>New</td>
+      <td>0.034107</td>
+      <td>0.020000</td>
+      <td>ROA -0.2% vs med 0.0%; ROE -0.2% vs med 0.1% | Trend: neutral; 3M momentum: 9.25%; RSI14: 71.9; MACD hist: 0.354 | mean=0.15, 30d imbalance=0.00 (pos=0, neg=0) | implied=199.43%, rating balance=1.00 (SB=5,B=8,H=0,S=0,SS=0) | regime=Mixed, beta_1y=0.84 -> score=0.06 | Bayesian ER mean=3.41% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>IDYA</td>
+      <td>Keep</td>
+      <td>0.039300</td>
+      <td>0.033607</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>INSW</td>
+      <td>Keep</td>
+      <td>0.041566</td>
+      <td>0.112717</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>MAX</td>
+      <td>Keep</td>
+      <td>0.040353</td>
+      <td>0.046032</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>MU</td>
+      <td>Keep</td>
+      <td>0.033590</td>
+      <td>0.079632</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>NVDA</td>
+      <td>Keep</td>
+      <td>0.031001</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>PRCT</td>
+      <td>Keep</td>
+      <td>0.026758</td>
+      <td>0.150000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>PRU</td>
+      <td>Increase</td>
+      <td>0.026074</td>
+      <td>0.020000</td>
+      <td>PE_ttm 7.7 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive | Trend: neutral; 3M momentum: -3.25%; RSI14: 33.7; MACD hist: -0.534 | mean=0.23, 30d imbalance=0.00 (pos=0, neg=0) | implied=12.50%, rating balance=0.06 (SB=0,B=2,H=13,S=1,SS=0) | regime=Mixed, beta_1y=1.06 -> score=-0.02 | Bayesian ER mean=2.61% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>QUAD</td>
+      <td>Keep</td>
+      <td>0.039244</td>
+      <td>0.067023</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>RCI</td>
+      <td>Keep</td>
+      <td>0.041774</td>
+      <td>0.038452</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>SPGI</td>
+      <td>Keep</td>
+      <td>0.029919</td>
+      <td>0.065139</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>TEAD</td>
+      <td>New</td>
+      <td>0.025998</td>
+      <td>0.020000</td>
+      <td>ROA 0.0% vs med 0.0%; ROE -0.2% vs med 0.1%; Revenue TTM positive | Trend: bearish; 3M momentum: -28.63%; RSI14: 53.9; MACD hist: 0.035 | mean=0.27, 30d imbalance=0.00 (pos=0, neg=0) | implied=75.58%, rating balance=0.40 (SB=2,B=0,H=3,S=0,SS=0) | regime=Mixed, beta_1y=1.46 -> score=-0.18 | Bayesian ER mean=2.60% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>TRVG</td>
+      <td>New</td>
+      <td>0.020054</td>
+      <td>0.020000</td>
+      <td>ROA 0.0% vs med 0.0%; ROE -0.1% vs med 0.1%; Revenue TTM positive | Trend: bearish; 3M momentum: -8.23%; RSI14: 70.1; MACD hist: 0.040 | mean=0.22, 30d imbalance=0.00 (pos=0, neg=0) | implied=23.64%, rating balance=-0.14 (SB=0,B=1,H=4,S=1,SS=1) | regime=Mixed, beta_1y=1.06 -> score=-0.02 | Bayesian ER mean=2.01% sd=2.00% | Regime=Mixed</td>
+    </tr>
+    <tr>
+      <td>UAL</td>
+      <td>Keep</td>
+      <td>0.034777</td>
+      <td>0.050551</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </body>
+</html>
