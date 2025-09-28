@@ -2,299 +2,607 @@
   <thead>
     <tr style="text-align: right;">
       <th>symbol</th>
-      <th>action</th>
+      <th>in_portfolio</th>
+      <th>status</th>
+      <th>current_shares</th>
       <th>add_shares</th>
-      <th>price_run</th>
-      <th>add_value_usd</th>
-      <th>target_weight</th>
-      <th>rationale</th>
-      <th>prev_shares</th>
       <th>target_shares</th>
-      <th>mu_mean_q</th>
-      <th>mu_sd_q</th>
+      <th>price_run</th>
+      <th>current_value_usd</th>
+      <th>add_value_usd</th>
       <th>target_value_usd</th>
+      <th>weight_total_100</th>
+      <th>weight_trades_100</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ALK</td>
-      <td>New</td>
-      <td>19</td>
-      <td>50.88</td>
-      <td>966.72</td>
-      <td>0.050244</td>
-      <td>PE_ttm 14.2 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: neutral; 3M momentum: 10.53%; RSI14: 24.2; MACD hist: -1.118; mean=0.16, 30d imbalance=0.00 (pos=0, neg=0); implied=30.27%, rating balance=0.93 (SB=4,B=9,H=1,S=0,SS=0); regime=Mixed, beta_1y=1.57 -> score=-0.23</td>
+      <td>AAPL</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>23</td>
       <td>0</td>
-      <td>19</td>
-      <td>0.068337</td>
-      <td>0.020000</td>
-      <td>966.72</td>
+      <td>23</td>
+      <td>255.46</td>
+      <td>5875.58</td>
+      <td>0.00</td>
+      <td>5875.58</td>
+      <td>0.063316</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>ALIT</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>700</td>
+      <td>0</td>
+      <td>700</td>
+      <td>3.25</td>
+      <td>2275.00</td>
+      <td>0.00</td>
+      <td>2275.00</td>
+      <td>0.024516</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>AMZN</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>50</td>
+      <td>0</td>
+      <td>50</td>
+      <td>219.78</td>
+      <td>10989.00</td>
+      <td>0.00</td>
+      <td>10989.00</td>
+      <td>0.118419</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>AVGO</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>13</td>
+      <td>0</td>
+      <td>13</td>
+      <td>334.53</td>
+      <td>4348.89</td>
+      <td>0.00</td>
+      <td>4348.89</td>
+      <td>0.046864</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>AXON</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>708.84</td>
+      <td>1417.68</td>
+      <td>0.00</td>
+      <td>1417.68</td>
+      <td>0.015277</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>BWMX</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>80</td>
+      <td>0</td>
+      <td>80</td>
+      <td>12.82</td>
+      <td>1025.60</td>
+      <td>0.00</td>
+      <td>1025.60</td>
+      <td>0.011052</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>COP</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>25</td>
+      <td>0</td>
+      <td>25</td>
+      <td>98.48</td>
+      <td>2462.00</td>
+      <td>0.00</td>
+      <td>2462.00</td>
+      <td>0.026531</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>COUR</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>200</td>
+      <td>0</td>
+      <td>200</td>
+      <td>11.72</td>
+      <td>2344.00</td>
+      <td>0.00</td>
+      <td>2344.00</td>
+      <td>0.025259</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>CRTO</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>150</td>
+      <td>0</td>
+      <td>150</td>
+      <td>22.25</td>
+      <td>3337.50</td>
+      <td>0.00</td>
+      <td>3337.50</td>
+      <td>0.035965</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>CTRA</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>170</td>
+      <td>0</td>
+      <td>170</td>
+      <td>23.83</td>
+      <td>4051.10</td>
+      <td>0.00</td>
+      <td>4051.10</td>
+      <td>0.043655</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>CVS</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>35</td>
+      <td>0</td>
+      <td>35</td>
+      <td>75.77</td>
+      <td>2651.95</td>
+      <td>0.00</td>
+      <td>2651.95</td>
+      <td>0.028578</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>DOX</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>24</td>
+      <td>0</td>
+      <td>24</td>
+      <td>81.63</td>
+      <td>1959.12</td>
+      <td>0.00</td>
+      <td>1959.12</td>
+      <td>0.021112</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>INSW</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>22</td>
+      <td>0</td>
+      <td>22</td>
+      <td>47.22</td>
+      <td>1038.84</td>
+      <td>0.00</td>
+      <td>1038.84</td>
+      <td>0.011195</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>MAX</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>180</td>
+      <td>0</td>
+      <td>180</td>
+      <td>12.04</td>
+      <td>2167.20</td>
+      <td>0.00</td>
+      <td>2167.20</td>
+      <td>0.023354</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>MU</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>13</td>
+      <td>0</td>
+      <td>13</td>
+      <td>157.27</td>
+      <td>2044.51</td>
+      <td>0.00</td>
+      <td>2044.51</td>
+      <td>0.022032</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>NVDA</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>52</td>
+      <td>0</td>
+      <td>52</td>
+      <td>178.19</td>
+      <td>9265.88</td>
+      <td>0.00</td>
+      <td>9265.88</td>
+      <td>0.099850</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>PRCT</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>55</td>
+      <td>0</td>
+      <td>55</td>
+      <td>36.66</td>
+      <td>2016.30</td>
+      <td>0.00</td>
+      <td>2016.30</td>
+      <td>0.021728</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>PRU</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>20</td>
+      <td>0</td>
+      <td>20</td>
+      <td>104.41</td>
+      <td>2088.20</td>
+      <td>0.00</td>
+      <td>2088.20</td>
+      <td>0.022503</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>QUAD</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>155</td>
+      <td>0</td>
+      <td>155</td>
+      <td>6.55</td>
+      <td>1015.25</td>
+      <td>0.00</td>
+      <td>1015.25</td>
+      <td>0.010940</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>RCI</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>28</td>
+      <td>0</td>
+      <td>28</td>
+      <td>35.66</td>
+      <td>998.48</td>
+      <td>0.00</td>
+      <td>998.48</td>
+      <td>0.010760</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>SPGI</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>9</td>
+      <td>0</td>
+      <td>9</td>
+      <td>487.18</td>
+      <td>4384.62</td>
+      <td>0.00</td>
+      <td>4384.62</td>
+      <td>0.047249</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>UAL</td>
+      <td>1</td>
+      <td>Keep in portfolio</td>
+      <td>22</td>
+      <td>0</td>
+      <td>22</td>
+      <td>99.15</td>
+      <td>2181.30</td>
+      <td>0.00</td>
+      <td>2181.30</td>
+      <td>0.023506</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <td>ARDT</td>
+      <td>1</td>
       <td>Increase</td>
-      <td>75</td>
-      <td>13.26</td>
-      <td>994.50</td>
-      <td>0.051688</td>
-      <td>PE_ttm 7.7 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.2% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: neutral; 3M momentum: -1.21%; RSI14: 55.1; MACD hist: -0.040; mean=0.22, 30d imbalance=0.00 (pos=0, neg=0); implied=46.43%, rating balance=0.73 (SB=2,B=7,H=1,S=0,SS=1); regime=Mixed, beta_1y=0.65 -> score=0.14</td>
       <td>190</td>
+      <td>75</td>
       <td>265</td>
-      <td>0.100040</td>
-      <td>0.020000</td>
+      <td>13.26</td>
+      <td>2519.40</td>
+      <td>994.50</td>
       <td>3513.90</td>
-    </tr>
-    <tr>
-      <td>CRNT</td>
-      <td>New</td>
-      <td>421</td>
-      <td>2.37</td>
-      <td>997.77</td>
-      <td>0.051858</td>
-      <td>PE_ttm 9.1 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: 0.41%; RSI14: 85.1; MACD hist: 0.067; mean=0.25, 30d imbalance=0.00 (pos=0, neg=0); implied=92.31%, rating balance=1.00 (SB=1,B=4,H=0,S=0,SS=0); regime=Mixed, beta_1y=1.48 -> score=-0.19</td>
-      <td>0</td>
-      <td>421</td>
-      <td>0.177604</td>
-      <td>0.020000</td>
-      <td>997.77</td>
-    </tr>
-    <tr>
-      <td>CWT</td>
-      <td>New</td>
-      <td>21</td>
-      <td>45.67</td>
-      <td>959.07</td>
-      <td>0.049847</td>
-      <td>PE_ttm 19.8 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: neutral; 3M momentum: -2.64%; RSI14: 43.9; MACD hist: -0.121; mean=0.30, 30d imbalance=0.00 (pos=0, neg=0); implied=22.25%, rating balance=1.00 (SB=0,B=5,H=0,S=0,SS=0); regime=Mixed, beta_1y=0.05 -> score=0.38</td>
-      <td>0</td>
-      <td>21</td>
-      <td>0.051500</td>
-      <td>0.020000</td>
-      <td>959.07</td>
-    </tr>
-    <tr>
-      <td>DDI</td>
-      <td>New</td>
-      <td>107</td>
-      <td>9.32</td>
-      <td>997.24</td>
-      <td>0.051830</td>
-      <td>PE_ttm 4.4 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -1.57%; RSI14: 30.8; MACD hist: -0.000; mean=0.28, 30d imbalance=0.00 (pos=0, neg=0); implied=104.79%, rating balance=1.00 (SB=0,B=4,H=0,S=0,SS=0); regime=Mixed, beta_1y=0.46 -> score=0.22</td>
-      <td>0</td>
-      <td>107</td>
-      <td>0.196260</td>
-      <td>0.020000</td>
-      <td>997.24</td>
-    </tr>
-    <tr>
-      <td>FLOC</td>
-      <td>New</td>
-      <td>62</td>
-      <td>16.01</td>
-      <td>992.62</td>
-      <td>0.051590</td>
-      <td>PE_ttm 28.0 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.0% vs med 0.1%; Revenue TTM positive; Insufficient technical history (<220 days); mean=0.15, 30d imbalance=0.00 (pos=0, neg=0); implied=120.77%, rating balance=1.00 (SB=3,B=5,H=0,S=0,SS=0); No beta data</td>
-      <td>0</td>
-      <td>62</td>
-      <td>0.218949</td>
-      <td>0.020000</td>
-      <td>992.62</td>
-    </tr>
-    <tr>
-      <td>HTO</td>
-      <td>New</td>
-      <td>20</td>
-      <td>48.41</td>
-      <td>968.20</td>
-      <td>0.050321</td>
-      <td>PE_ttm 15.5 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -8.30%; RSI14: 46.3; MACD hist: -0.110; mean=0.23, 30d imbalance=0.00 (pos=0, neg=0); implied=25.75%, rating balance=0.75 (SB=0,B=3,H=1,S=0,SS=0); regime=Mixed, beta_1y=0.05 -> score=0.38</td>
-      <td>0</td>
-      <td>20</td>
-      <td>0.058948</td>
-      <td>0.020000</td>
-      <td>968.20</td>
+      <td>0.037866</td>
+      <td>0.051688</td>
     </tr>
     <tr>
       <td>IDYA</td>
+      <td>1</td>
       <td>Increase</td>
-      <td>37</td>
-      <td>26.83</td>
-      <td>992.71</td>
-      <td>0.051595</td>
-      <td>ROA -0.2% vs med 0.0%; ROE -0.4% vs med 0.1%; Revenue TTM positive; Trend: bullish; 3M momentum: 19.01%; RSI14: 52.1; MACD hist: 0.037; mean=0.16, 30d imbalance=0.00 (pos=0, neg=0); implied=81.56%, rating balance=0.88 (SB=2,B=12,H=2,S=0,SS=0); regime=Mixed, beta_1y=1.04 -> score=-0.02</td>
       <td>41</td>
+      <td>37</td>
       <td>78</td>
-      <td>0.160792</td>
-      <td>0.020000</td>
+      <td>26.83</td>
+      <td>1100.03</td>
+      <td>992.71</td>
       <td>2092.74</td>
+      <td>0.022552</td>
+      <td>0.051595</td>
+    </tr>
+    <tr>
+      <td>ALK</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>19</td>
+      <td>19</td>
+      <td>50.88</td>
+      <td>0.00</td>
+      <td>966.72</td>
+      <td>966.72</td>
+      <td>0.010417</td>
+      <td>0.050244</td>
+    </tr>
+    <tr>
+      <td>CRNT</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>421</td>
+      <td>421</td>
+      <td>2.37</td>
+      <td>0.00</td>
+      <td>997.77</td>
+      <td>997.77</td>
+      <td>0.010752</td>
+      <td>0.051858</td>
+    </tr>
+    <tr>
+      <td>CWT</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>21</td>
+      <td>21</td>
+      <td>45.67</td>
+      <td>0.00</td>
+      <td>959.07</td>
+      <td>959.07</td>
+      <td>0.010335</td>
+      <td>0.049847</td>
+    </tr>
+    <tr>
+      <td>DDI</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>107</td>
+      <td>107</td>
+      <td>9.32</td>
+      <td>0.00</td>
+      <td>997.24</td>
+      <td>997.24</td>
+      <td>0.010746</td>
+      <td>0.051830</td>
+    </tr>
+    <tr>
+      <td>FLOC</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>62</td>
+      <td>62</td>
+      <td>16.01</td>
+      <td>0.00</td>
+      <td>992.62</td>
+      <td>992.62</td>
+      <td>0.010697</td>
+      <td>0.051590</td>
+    </tr>
+    <tr>
+      <td>HTO</td>
+      <td>0</td>
+      <td>New</td>
+      <td>0</td>
+      <td>20</td>
+      <td>20</td>
+      <td>48.41</td>
+      <td>0.00</td>
+      <td>968.20</td>
+      <td>968.20</td>
+      <td>0.010433</td>
+      <td>0.050321</td>
     </tr>
     <tr>
       <td>IMCR</td>
+      <td>0</td>
       <td>New</td>
-      <td>29</td>
-      <td>34.02</td>
-      <td>986.58</td>
-      <td>0.051276</td>
-      <td>ROA -0.0% vs med 0.0%; ROE -0.1% vs med 0.1%; Revenue TTM positive; Trend: bullish; 3M momentum: 3.87%; RSI14: 54.7; MACD hist: -0.303; mean=0.13, 30d imbalance=0.00 (pos=0, neg=0); implied=87.07%, rating balance=0.71 (SB=4,B=9,H=3,S=1,SS=0); regime=Mixed, beta_1y=0.71 -> score=0.12</td>
       <td>0</td>
       <td>29</td>
-      <td>0.169499</td>
-      <td>0.020000</td>
+      <td>29</td>
+      <td>34.02</td>
+      <td>0.00</td>
       <td>986.58</td>
+      <td>986.58</td>
+      <td>0.010631</td>
+      <td>0.051276</td>
     </tr>
     <tr>
       <td>IMVT</td>
+      <td>0</td>
       <td>New</td>
-      <td>61</td>
-      <td>16.23</td>
-      <td>990.03</td>
-      <td>0.051456</td>
-      <td>ROA -0.5% vs med 0.0%; ROE -0.8% vs med 0.1%; Trend: bearish; 3M momentum: -2.56%; RSI14: 53.2; MACD hist: -0.070; mean=0.15, 30d imbalance=0.00 (pos=0, neg=0); implied=157.92%, rating balance=0.75 (SB=3,B=9,H=4,S=0,SS=0); regime=Mixed, beta_1y=1.13 -> score=-0.05</td>
       <td>0</td>
       <td>61</td>
-      <td>0.250000</td>
-      <td>0.020000</td>
+      <td>61</td>
+      <td>16.23</td>
+      <td>0.00</td>
       <td>990.03</td>
+      <td>990.03</td>
+      <td>0.010669</td>
+      <td>0.051456</td>
     </tr>
     <tr>
       <td>LKQ</td>
+      <td>0</td>
       <td>New</td>
-      <td>33</td>
-      <td>30.30</td>
-      <td>999.90</td>
-      <td>0.051969</td>
-      <td>PE_ttm 9.1 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -19.47%; RSI14: 32.3; MACD hist: -0.138; mean=0.20, 30d imbalance=0.00 (pos=0, neg=0); implied=43.21%, rating balance=0.86 (SB=3,B=3,H=1,S=0,SS=0); regime=Mixed, beta_1y=0.54 -> score=0.19</td>
       <td>0</td>
       <td>33</td>
-      <td>0.093932</td>
-      <td>0.027347</td>
+      <td>33</td>
+      <td>30.30</td>
+      <td>0.00</td>
       <td>999.90</td>
+      <td>999.90</td>
+      <td>0.010775</td>
+      <td>0.051969</td>
     </tr>
     <tr>
       <td>MA</td>
+      <td>0</td>
       <td>New</td>
-      <td>1</td>
-      <td>565.13</td>
-      <td>565.13</td>
-      <td>0.029372</td>
-      <td>PE_ttm 37.5 vs med 16.5; ROA 0.2% vs med 0.0%; ROE 1.8% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bullish; 3M momentum: 4.84%; RSI14: 45.1; MACD hist: -1.106; mean=0.33, 30d imbalance=0.00 (pos=0, neg=0); implied=10.54%, rating balance=0.69 (SB=5,B=21,H=9,S=0,SS=1); regime=Mixed, beta_1y=0.77 -> score=0.09</td>
       <td>0</td>
       <td>1</td>
-      <td>0.025358</td>
-      <td>0.020000</td>
+      <td>1</td>
       <td>565.13</td>
+      <td>0.00</td>
+      <td>565.13</td>
+      <td>565.13</td>
+      <td>0.006090</td>
+      <td>0.029372</td>
     </tr>
     <tr>
       <td>MTDR</td>
+      <td>0</td>
       <td>New</td>
-      <td>20</td>
-      <td>49.01</td>
-      <td>980.20</td>
-      <td>0.050945</td>
-      <td>PE_ttm 6.5 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.2% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -5.48%; RSI14: 33.0; MACD hist: -0.294; mean=0.25, 30d imbalance=0.00 (pos=0, neg=0); implied=40.51%, rating balance=0.89 (SB=3,B=14,H=2,S=0,SS=0); regime=Mixed, beta_1y=1.38 -> score=-0.15</td>
       <td>0</td>
       <td>20</td>
-      <td>0.088756</td>
-      <td>0.020000</td>
+      <td>20</td>
+      <td>49.01</td>
+      <td>0.00</td>
       <td>980.20</td>
+      <td>980.20</td>
+      <td>0.010563</td>
+      <td>0.050945</td>
     </tr>
     <tr>
       <td>PACS</td>
+      <td>0</td>
       <td>New</td>
-      <td>71</td>
-      <td>13.98</td>
-      <td>992.58</td>
-      <td>0.051588</td>
-      <td>PE_ttm 15.8 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.0% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: 5.61%; RSI14: 58.6; MACD hist: 0.331; Upcoming earnings window; neutralizing sentiment (mean=0.12, 30d imbalance=0.00); implied=159.51%, rating balance=1.00 (SB=1,B=3,H=0,S=0,SS=0); regime=Mixed, beta_1y=0.76 -> score=0.10</td>
       <td>0</td>
       <td>71</td>
-      <td>0.250000</td>
-      <td>0.020000</td>
+      <td>71</td>
+      <td>13.98</td>
+      <td>0.00</td>
       <td>992.58</td>
+      <td>992.58</td>
+      <td>0.010696</td>
+      <td>0.051588</td>
     </tr>
     <tr>
       <td>PFE</td>
+      <td>0</td>
       <td>New</td>
-      <td>42</td>
-      <td>23.76</td>
-      <td>997.92</td>
-      <td>0.051866</td>
-      <td>PE_ttm 7.1 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.1% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -1.11%; RSI14: 35.5; MACD hist: -0.074; mean=0.17, 30d imbalance=0.00 (pos=0, neg=0); implied=20.22%, rating balance=0.29 (SB=1,B=7,H=15,S=1,SS=0); regime=Mixed, beta_1y=0.41 -> score=0.23</td>
       <td>0</td>
       <td>42</td>
-      <td>0.047106</td>
-      <td>0.020000</td>
+      <td>42</td>
+      <td>23.76</td>
+      <td>0.00</td>
       <td>997.92</td>
+      <td>997.92</td>
+      <td>0.010754</td>
+      <td>0.051866</td>
     </tr>
     <tr>
       <td>TEAD</td>
+      <td>0</td>
       <td>New</td>
-      <td>591</td>
-      <td>1.69</td>
-      <td>998.79</td>
-      <td>0.051911</td>
-      <td>ROA 0.0% vs med 0.0%; ROE -0.2% vs med 0.1%; Revenue TTM positive; Trend: bearish; 3M momentum: -28.63%; RSI14: 53.9; MACD hist: 0.035; mean=0.27, 30d imbalance=0.00 (pos=0, neg=0); implied=75.58%, rating balance=0.40 (SB=2,B=0,H=3,S=0,SS=0); regime=Mixed, beta_1y=1.46 -> score=-0.18</td>
       <td>0</td>
       <td>591</td>
-      <td>0.151117</td>
-      <td>0.020000</td>
+      <td>591</td>
+      <td>1.69</td>
+      <td>0.00</td>
       <td>998.79</td>
+      <td>998.79</td>
+      <td>0.010763</td>
+      <td>0.051911</td>
     </tr>
     <tr>
       <td>TXG</td>
+      <td>0</td>
       <td>New</td>
-      <td>85</td>
-      <td>11.72</td>
-      <td>996.20</td>
-      <td>0.051776</td>
-      <td>ROA -0.1% vs med 0.0%; ROE -0.1% vs med 0.1%; Revenue TTM positive; Trend: bullish; 3M momentum: 19.74%; RSI14: 46.5; MACD hist: -0.073; mean=0.25, 30d imbalance=0.00 (pos=0, neg=0); implied=15.57%, rating balance=0.44 (SB=2,B=5,H=9,S=0,SS=0); regime=Mixed, beta_1y=1.89 -> score=-0.36</td>
       <td>0</td>
       <td>85</td>
-      <td>0.036833</td>
-      <td>0.020000</td>
+      <td>85</td>
+      <td>11.72</td>
+      <td>0.00</td>
       <td>996.20</td>
+      <td>996.20</td>
+      <td>0.010735</td>
+      <td>0.051776</td>
     </tr>
     <tr>
       <td>TXO</td>
+      <td>0</td>
       <td>New</td>
-      <td>69</td>
-      <td>14.32</td>
-      <td>988.08</td>
-      <td>0.051354</td>
-      <td>PE_ttm 10.7 vs med 16.5; ROA -0.0% vs med 0.0%; ROE 0.0% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -10.08%; RSI14: 45.0; MACD hist: 0.060; mean=0.19, 30d imbalance=0.00 (pos=0, neg=0); implied=56.80%, rating balance=1.00 (SB=0,B=3,H=0,S=0,SS=0); regime=Mixed, beta_1y=0.44 -> score=0.23</td>
       <td>0</td>
       <td>69</td>
-      <td>0.119020</td>
-      <td>0.020000</td>
+      <td>69</td>
+      <td>14.32</td>
+      <td>0.00</td>
       <td>988.08</td>
+      <td>988.08</td>
+      <td>0.010648</td>
+      <td>0.051354</td>
     </tr>
     <tr>
       <td>UTZ</td>
+      <td>0</td>
       <td>New</td>
-      <td>82</td>
-      <td>12.12</td>
-      <td>993.84</td>
-      <td>0.051654</td>
-      <td>PE_ttm 16.4 vs med 16.5; ROA 0.0% vs med 0.0%; ROE 0.0% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bearish; 3M momentum: -0.78%; RSI14: 39.4; MACD hist: -0.052; mean=0.22, 30d imbalance=0.00 (pos=0, neg=0); implied=34.33%, rating balance=0.73 (SB=3,B=5,H=3,S=0,SS=0); regime=Mixed, beta_1y=0.21 -> score=0.31</td>
       <td>0</td>
       <td>82</td>
-      <td>0.076569</td>
-      <td>0.020000</td>
+      <td>82</td>
+      <td>12.12</td>
+      <td>0.00</td>
       <td>993.84</td>
+      <td>993.84</td>
+      <td>0.010710</td>
+      <td>0.051654</td>
     </tr>
     <tr>
       <td>XPO</td>
+      <td>0</td>
       <td>New</td>
-      <td>7</td>
-      <td>126.05</td>
-      <td>882.35</td>
-      <td>0.045859</td>
-      <td>PE_ttm 36.1 vs med 16.5; ROA 0.1% vs med 0.0%; ROE 0.2% vs med 0.1%; EPS positive; Revenue TTM positive; Trend: bullish; 3M momentum: 4.31%; RSI14: 56.8; MACD hist: -0.157; mean=0.22, 30d imbalance=0.00 (pos=0, neg=0); implied=6.11%, rating balance=0.79 (SB=3,B=18,H=1,S=1,SS=1); regime=Mixed, beta_1y=1.60 -> score=-0.24</td>
       <td>0</td>
       <td>7</td>
-      <td>0.014926</td>
-      <td>0.020000</td>
+      <td>7</td>
+      <td>126.05</td>
+      <td>0.00</td>
       <td>882.35</td>
+      <td>882.35</td>
+      <td>0.009508</td>
+      <td>0.045859</td>
     </tr>
   </tbody>
 </table>
