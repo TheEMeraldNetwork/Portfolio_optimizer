@@ -1,0 +1,39 @@
+{
+  "table": [
+    {
+      "section": "prices",
+      "total_symbols": 5,
+      "knockouts": 0,
+      "working": 5,
+      "prices_min_date": "2025-05-06",
+      "prices_max_date": "2025-09-26",
+      "t1_coverage_pct": 0.0
+    },
+    {
+      "section": "fundamentals",
+      "total_symbols": 5,
+      "knockouts": 0,
+      "working": 5,
+      "prices_min_date": null,
+      "prices_max_date": null,
+      "t1_coverage_pct": null
+    },
+    {
+      "section": "sentiment",
+      "total_symbols": 5,
+      "knockouts": 0,
+      "working": 5,
+      "prices_min_date": null,
+      "prices_max_date": null,
+      "t1_coverage_pct": null
+    }
+  ],
+  "universe_size": 5,
+  "universe_symbols_sample": [
+    "AAPL",
+    "ACCO",
+    "ADBE",
+    "ADEN",
+    "ADV"
+  ]
+}
