@@ -1,0 +1,10 @@
+symbol,in_portfolio,action,add_shares,price_run
+AAPL,1,Increase,5,255.46
+AVGO,1,Increase,5,334.53
+AXON,1,Increase,5,708.84
+BWMX,1,Increase,86,12.82
+IDYA,1,Increase,43,26.83
+INSW,1,Increase,27,47.22
+QUAD,1,Increase,164,6.55
+RCI,1,Increase,34,35.66
+SPGI,1,Increase,5,487.18
