@@ -1,0 +1,11 @@
+{
+  "budget_usd": 25000.0,
+  "spent_usd": 23148.68,
+  "expected_return_before": 0.0011935074248944771,
+  "expected_return_after": 0.012474592692028733,
+  "expected_return_improvement_pp": 1.1281085267134254,
+  "vol_before": 0.14746710326084125,
+  "vol_after": 0.14266739064697748,
+  "universe_size": 21,
+  "trades_count": 14
+}
