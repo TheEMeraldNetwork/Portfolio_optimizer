@@ -1,0 +1,4 @@
+symbol,in_portfolio,action,add_shares,price_run
+ASML,0,New,2,736.82
+AXON,1,Increase,2,725.29
+NFLX,0,New,1,1210.61
